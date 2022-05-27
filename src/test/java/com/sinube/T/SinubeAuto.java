@@ -769,6 +769,7 @@ public class SinubeAuto {
 
 		File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		Thread.sleep(1000);
+		//hi
 
 		try {
 			Thread.sleep(1000);
