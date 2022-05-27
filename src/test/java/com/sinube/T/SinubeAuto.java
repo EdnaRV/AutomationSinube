@@ -781,7 +781,7 @@ public class SinubeAuto {
 		Timeouts implicitlyWait = driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		System.out.println("\n ScreenShot Tomada\n");
 		System.out.println("\n" + msgError);
-
+//hi
 	} 
 
 	
