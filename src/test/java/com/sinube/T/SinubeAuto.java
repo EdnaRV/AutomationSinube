@@ -35,14 +35,12 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.opentelemetry.sdk.metrics.data.Data;
 
-import org.apache.commons.compress.harmony.pack200.NewAttribute;
 import org.apache.commons.io.FileUtils;
 import org.hamcrest.Description;
 import org.openqa.selenium.TakesScreenshot;
 
 import java.io.FileReader;
 import java.util.Iterator;
-import com.opencsv.CSVReader;
 import java.util.Scanner;
 import java.awt.print.Printable;
 import java.io.BufferedReader;
