@@ -9,7 +9,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Scanner;
 
-import org.apache.commons.math3.optim.linear.LinearConstraint;
 
 public class read {
 	
