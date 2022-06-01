@@ -95,7 +95,6 @@ public class SinubeAuto {
 
 	
 	@BeforeMethod
-	@BeforeMethod
 	public void setUp() throws Exception {
 		
 		System.setProperty("webdriver.chrome.driver", "./src/test/driver/chromedriver100.exe");
