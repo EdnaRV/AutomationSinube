@@ -801,9 +801,7 @@ public class SinubeAuto {
 		return True;
 	}
 */	
-	
 
-	@AfterMethod
 	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(500);
