@@ -3,6 +3,9 @@ package com.sinube.T;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -92,6 +95,7 @@ public class SinubeAuto {
 
 	
 	@BeforeMethod
+	@BeforeMethod
 	public void setUp() throws Exception {
 		
 		System.setProperty("webdriver.chrome.driver", "./src/test/driver/chromedriver100.exe");
@@ -102,6 +106,7 @@ public class SinubeAuto {
 	
 //@Test
 	
+	@Test
 	public void test() throws InterruptedException, FileNotFoundException {
 		int añoDeseado = 0;
 		String monthFromFile = "";
@@ -799,6 +804,7 @@ public class SinubeAuto {
 */	
 	
 
+	@AfterMethod
 	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(500);
