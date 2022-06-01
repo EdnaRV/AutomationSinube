@@ -6,6 +6,7 @@
       <class name="com.sinube.T.SinubeAuto">
         <methods>
           <include name="setUp"/>
+          <include name="test"/>
           <include name="testWrongData"/>
           <include name="tearDown"/>
         </methods>

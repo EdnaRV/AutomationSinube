@@ -1,39 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="0" failed="1" skipped="0">
+<testng-results total="2" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-31T21:31:30Z" name="Default suite" finished-at="2022-05-31T21:31:41Z" duration-ms="10866">
+  <suite started-at="2022-06-01T17:24:02Z" name="Default suite" finished-at="2022-06-01T17:24:15Z" duration-ms="12660">
     <groups>
     </groups>
-    <test started-at="2022-05-31T21:31:30Z" name="Default test" finished-at="2022-05-31T21:31:41Z" duration-ms="10866">
+    <test started-at="2022-06-01T17:24:02Z" name="Default test" finished-at="2022-06-01T17:24:15Z" duration-ms="12660">
       <class name="com.sinube.T.SinubeAuto">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sinube.T.SinubeAuto@5a3bc7ed]" started-at="2022-05-31T16:31:30Z" name="setUp" finished-at="2022-05-31T16:31:35Z" duration-ms="5267" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sinube.T.SinubeAuto@181e731e]" started-at="2022-06-01T12:24:02Z" name="setUp" finished-at="2022-06-01T12:24:06Z" duration-ms="3929" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testWrongData()[pri:0, instance:com.sinube.T.SinubeAuto@5a3bc7ed]" started-at="2022-05-31T16:31:35Z" name="testWrongData" finished-at="2022-05-31T16:31:36Z" duration-ms="980" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        <test-method signature="test()[pri:0, instance:com.sinube.T.SinubeAuto@181e731e]" started-at="2022-06-01T12:24:06Z" name="test" finished-at="2022-06-01T12:24:10Z" duration-ms="4188" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
+              <![CDATA[chrome not reachable
   (Session info: chrome=101.0.4951.67)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'STFMXC1695', ip: '192.168.1.68', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'STFMXC1695', ip: '192.168.1.170', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cd92a9c4443f380890846ac144a0c90c, executeScript {script=window.scrollBy(0,300), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\envaldez\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61034}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61034/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cd92a9c4443f380890846ac144a0c90c]]>
+Command: [ac3a15dc32dd99f769458d2b928b2382, refresh {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\envaldez\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54789}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54789/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac3a15dc32dd99f769458d2b928b2382]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=101.0.4951.67)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'STFMXC1695', ip: '192.168.1.68', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'STFMXC1695', ip: '192.168.1.170', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cd92a9c4443f380890846ac144a0c90c, executeScript {script=window.scrollBy(0,300), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\envaldez\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61034}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61034/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cd92a9c4443f380890846ac144a0c90c
+Command: [ac3a15dc32dd99f769458d2b928b2382, refresh {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\envaldez\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54789}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54789/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac3a15dc32dd99f769458d2b928b2382
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -46,8 +44,10 @@ Session ID: cd92a9c4443f380890846ac144a0c90c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-	at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:501)
-	at com.sinube.T.SinubeAuto.testWrongData(SinubeAuto.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.refresh(RemoteWebDriver.java:1032)
+	at com.sinube.T.SinubeAuto.test(SinubeAuto.java:143)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -74,31 +74,31 @@ Session ID: cd92a9c4443f380890846ac144a0c90c
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testWrongData -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sinube.T.SinubeAuto@5a3bc7ed]" started-at="2022-05-31T16:31:36Z" name="tearDown" finished-at="2022-05-31T16:31:36Z" duration-ms="0" status="FAIL">
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sinube.T.SinubeAuto@181e731e]" started-at="2022-06-01T12:24:10Z" name="tearDown" finished-at="2022-06-01T12:24:10Z" duration-ms="0" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[chrome not reachable
   (Session info: chrome=101.0.4951.67)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'STFMXC1695', ip: '192.168.1.68', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'STFMXC1695', ip: '192.168.1.170', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cd92a9c4443f380890846ac144a0c90c, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\envaldez\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61034}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61034/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cd92a9c4443f380890846ac144a0c90c]]>
+Command: [ac3a15dc32dd99f769458d2b928b2382, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\envaldez\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54789}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54789/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac3a15dc32dd99f769458d2b928b2382]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
   (Session info: chrome=101.0.4951.67)
 Build info: version: '4.1.3', revision: '7b1ebf28ef'
-System info: host: 'STFMXC1695', ip: '192.168.1.68', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'STFMXC1695', ip: '192.168.1.170', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cd92a9c4443f380890846ac144a0c90c, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\envaldez\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61034}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61034/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: cd92a9c4443f380890846ac144a0c90c
+Command: [ac3a15dc32dd99f769458d2b928b2382, close {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 100.0.4896.60 (6a5d10861ce8..., userDataDir: C:\Users\envaldez\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54789}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54789/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ac3a15dc32dd99f769458d2b928b2382
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -114,7 +114,7 @@ Session ID: cd92a9c4443f380890846ac144a0c90c
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
 	at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:452)
-	at com.sinube.T.SinubeAuto.tearDown(SinubeAuto.java:807)
+	at com.sinube.T.SinubeAuto.tearDown(SinubeAuto.java:808)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -144,6 +144,18 @@ Session ID: cd92a9c4443f380890846ac144a0c90c
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="testWrongData()[pri:0, instance:com.sinube.T.SinubeAuto@181e731e]" started-at="2022-06-01T12:24:15Z" name="testWrongData" finished-at="2022-06-01T12:24:15Z" duration-ms="1" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWrongData -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.sinube.T.SinubeAuto@181e731e]" started-at="2022-06-01T12:24:15Z" name="setUp" finished-at="2022-06-01T12:24:15Z" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sinube.T.SinubeAuto@181e731e]" started-at="2022-06-01T12:24:15Z" name="tearDown" finished-at="2022-06-01T12:24:15Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
