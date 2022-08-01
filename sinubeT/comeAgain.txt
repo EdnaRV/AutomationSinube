@@ -1,0 +1,149 @@
+			for(int ie = 0; ie < listOfElements.size(); ie ++) {
+				//D:
+				
+				//:D
+				
+				
+				
+				switch(ie) {
+				case 0:					
+					//Valida que no sea consonante xyz
+						
+					try {
+						driver.findElement(nInputx).sendKeys(listOfElements.get(ie).toString());
+						driver.findElement(apInput);
+					} catch (Exception e) {
+						System.out.println("El nombre contiene caracteres especiales");
+						//como evaluo si la cadena tiene espacios, o es numero o etc etc etc
+						ScreenShot();
+					}finally {
+						//dataErrorButtonMessage();
+						System.out.println("Hasta la prótxima");
+
+					}
+					
+					Thread.sleep(280);
+					break;
+				case 1:
+					System.out.println("Hola desde c1!\n");
+					driver.findElement(apInput).sendKeys(listOfElements.get(ie).toString());
+					Thread.sleep(280);
+					break;
+				case 2:
+					System.out.println("Hola desde c2!\n");
+					driver.findElement(amInput).sendKeys(listOfElements.get(ie).toString());
+					Thread.sleep(280);
+					break;
+				case 3:
+					añoDeseado = Integer.parseInt(listOfElements.get(ie).toString());
+					
+					System.out.println("Hola desde c3!\n");
+					driver.findElement(calendarIcon).click();
+					Thread.sleep(280);
+					driver.findElement(calendarAño).click();
+					Thread.sleep(280);
+					
+					añocurrent = driver.findElement(currentAñoLocator).getText();
+					int añonc = Integer.parseInt(añocurrent);
+					
+					//2022         2021 ---- 1996 --        
+					for(int i = añonc ; i >= (añoDeseado+1) ; --i  ) {
+						driver.findElement(yearWindow).sendKeys(Keys.ARROW_UP);
+						Thread.sleep(28);
+					}
+					driver.findElement(yearWindow).sendKeys(Keys.ENTER);
+					Thread.sleep(500);
+					break;
+					
+				case 4:
+					System.out.println("Hola desde c4!\n");
+					
+					monthFromFile = listOfElements.get(ie).toString();
+					By monthLocator = By.xpath("//*[contains(text(), '" + monthFromFile + " ')]  ");
+
+					
+					driver.findElement(monthClick).click();
+					Thread.sleep(280);
+					driver.findElement(monthLocator).click();
+					Thread.sleep(280);
+
+					break;
+				case 5:
+					System.out.println("Hola desde c5!\n");
+					/*
+				
+					ddFromFile = listOfElements.get(ie).toString();
+					System.out.println(ddFromFile);
+					By ddLocator = By.xpath("//div[@class='igx-calendar__body-row ng-star-inserted']//span[contains(text(), '  " + ddFromFile +" ')]");
+					
+										
+					driver.findElement(ddLocator).click();
+					
+					*/
+					
+					/*driver.findElement(By.xpath("//span[contains(text(),' " + dd +" ')]")).click();
+		Thread.sleep(500);
+		
+		
+	*/
+					ddFromFile = listOfElements.get(ie).toString();
+					System.out.println(ddFromFile);
+					//By ddLocator = By.xpath("//span[contains(text(),' " + ddFromFile +" ')]");
+					//div[@class='igx-calendar__body-row ng-star-inserted']//span[contains(text(),' 14 ')]
+					By ddLocator = By.xpath("//div[@class='igx-calendar__body-row ng-star-inserted']//span[contains(text(),' "+ ddFromFile +" ')]");
+					
+					driver.findElement(ddLocator).click();
+					
+					Thread.sleep(280);
+					
+					break;
+				case 6:
+					fnFromFile = listOfElements.get(ie).toString();
+					
+					System.out.println("Hola desde c6!\n");
+					Thread.sleep(280);
+					driver.findElement(lnacimiento).click();
+					Thread.sleep(280);
+					driver.findElement(lnacimiento).sendKeys(fnFromFile);
+					Thread.sleep(280);
+					//driver.findElement(lnacimiento).sendKeys(Keys.ENTER);
+					//Thread.sleep(280);
+					
+					break;
+				case 7:
+					System.out.println("Hola desde c7!\n");
+					//click radio if string es mujer/ hombre
+					genFromFile = listOfElements.get(ie).toString();
+					//if si es para hombre o es para mujer
+					
+
+					driver.findElement(radioGenderM).click();
+					
+					driver.findElement(generateButton).click();	
+					
+					//Valida que no sea consonante xyz
+					
+					/*
+					
+
+					*/
+					
+					break;
+				case 8:
+					System.out.println("Hola desde c8!\n");
+					/*
+					File screenshotFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+					try {
+						FileUtils .copyFile(screenshotFile, new File("LOGIN_" + System.currentTimeMillis() + "_" + getDate() + ".png"));
+						
+					} catch (Exception e) {
+						e.printStackTrace();
+					}
+					Timeouts implicitlyWait = driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+					*/
+					ScreenShot();
+					break;
+				
+				}
+				
+			}
